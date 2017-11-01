@@ -18,11 +18,11 @@ Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemun
 Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF).
 
 1. Bentuk Normal Pertama (1NF) : Menghilangkan Perulangan Grup
-2. Bentuk Normal Kedua (2NF) : Menghilangkan Ketergantungan Parsial
-3. Bentuk Normal Ketiga (3NF) : Menghilangkan Ketergantungan Transitif
+2. Bentuk Normal Kedua (2NF)   : Menghilangkan Ketergantungan Parsial
+3. Bentuk Normal Ketiga (3NF)  : Menghilangkan Ketergantungan Transitif
 4. Bentuk Normal Boyce-Code Form (BCNF) : Menghilangkan anomali-anomali hasil dari ketergantungan fungsional
 5. Bentuk Normal Keempat (4NF) : Menghilangkan ketergantungan multivalue
-6. Bentuk Normal Kelima : Menghilangkan anomali-anomali yang tersisa.
+6. Bentuk Normal Kelima (5NF)  : Menghilangkan anomali-anomali yang tersisa.
 
 [![Tahapan-_Normalisasi.jpg](https://s1.postimg.org/5nyhs6wxu7/Tahapan-_Normalisasi.jpg)](https://postimg.org/image/8bny2jpz63/)
 
