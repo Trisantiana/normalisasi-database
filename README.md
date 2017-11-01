@@ -8,8 +8,8 @@ Tujuan normalisasi database adalah untuk menghilangkan dan mengurangi redudansi 
 Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemungkinan yang akan merugikan sistem secara keseluruhan.
 
     * INSERT Anomali : Situasi dimana tidak memungkinkan memasukkan beberapa jenis data secara langsung di database.
-    * DELETE Anomali : Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
-    * UPDATE Anomali : Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
+    * DELETE Anomali: Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
+    * UPDATE Anomali: Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
 
 ## TAHAPAN NORMALISASI : 
 
@@ -22,6 +22,9 @@ Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF).
 5. Bentuk Normal Keempat (4NF) : Menghilangkan ketergantungan multivalue
 6. Bentuk Normal Kelima : Menghilangkan anomali-anomali yang tersisa.
 
+[![Tahapan-_Normalisasi.jpg](https://s1.postimg.org/5nyhs6wxu7/Tahapan-_Normalisasi.jpg)](https://postimg.org/image/8bny2jpz63/)
+
+
 #### Tahapan Normalisasi
 1. Bentuk Normal Tahap Pertama (1NF)
 
@@ -30,11 +33,7 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 * Bentuk normal 1NF terpenuhi jika sebuah tabel tidak memiliki atribut bernilai banyak (multivalued attribute), atribut composite atau kombinasinya dalam domain data yang sama.
 * Setiap atribut dalam tabel tersebut harus bernilai atomic (tidak dapat dibagi-bagi lagi).
 
-Gambar 1
-
-![nf1.jpg](https://s1.postimg.org/7x4qxi0ny7/nf1.jpg)
-
-gambar tersebut adalah contoh bentuk normal 1NF. yang menandainya adalah setiap kolom atau baris harus terisi dan setiap kolom harus mengandung satu nilai.
+[![image.jpg](https://s1.postimg.org/4srj52x9wv/image.jpg)](https://postimg.org/image/9btk822quj/)
 
 2. Bentuk Normal Tahap Kedua (2NF)
 
@@ -42,24 +41,14 @@ gambar tersebut adalah contoh bentuk normal 1NF. yang menandainya adalah setiap 
 * Sebuah tabel tidak memenuhi 2NF, jika ada atribut yang ketergantungannya (Functional Dependency) hanya bersifat parsial saja (hanya tergantung pada sebagian dari primary key).
 * Jika terdapat atribut yang tidak memiliki ketergantungan terhadap primary key, maka atribut tersebut harus dipindah atau dihilangkan.
 
-Gambar 2
-
-![2.NF.png](https://s1.postimg.org/8xylxjigz3/2.NF.png)
-
-![2_NF.png](https://s1.postimg.org/4la9xnjcm7/2_NF.png)
-
-![2.NF1.png](https://s1.postimg.org/8fvsuslqcv/2.NF1.png)
+[![image.jpg](https://s1.postimg.org/7nwyp16yun/image.jpg)](https://postimg.org/image/5hxk39fb3f/)
 
 3. Bentuk Normal Tahap Ketiga (3NF)
 
 * Bentuk normal 3NF terpenuhi jika telah memenuhi bentuk 2NF, dan jika tidak ada atribut non primary key yang memiliki ketergantungan terhadap atribut non primary key yang lainnya,
 * Untuk setiap Functional Dependency dengan notasi X-->A, maka : X harus menjadi superkey pada tabel tersebut. Atau A merupakan bagian dari primary key pada tabel tersebut.
 
-Gambar 3
-
-![3.NF.png](https://s1.postimg.org/6vvknnh6f3/3.NF.png)
-
-![3_NF.png](https://s1.postimg.org/530bm8xdfz/3_NF.png)
+[![image.jpg](https://s1.postimg.org/1ybmdgniu7/image.jpg)](https://postimg.org/image/4pkolj9mvv/)
 
 4. Boyce-Code Normal Form (BCNF)
 
