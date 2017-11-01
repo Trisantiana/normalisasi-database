@@ -13,16 +13,16 @@ Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemun
 
 ## TAHAPAN NORMALISASI : 
 
-Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF). Biasanya hanya sampai pada tingkat 3NF atau BCNF karena sudah cukup memadai untuk menghasilkan tabel-tabel yang berkualitas baik. Urutannya : 1NF, 2NF, 3NF, BCNF, 4 NF, 5NF
-
+Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF).
 
 1. Bentuk Normal Pertama (1NF) : Menghilangkan Perulangan Grup
 2. Bentuk Normal Kedua (2NF) : Menghilangkan Ketergantungan Parsial
 3. Bentuk Normal Ketiga (3NF) : Menghilangkan Ketergantungan Transitif
 4. Bentuk Normal Boyce-Code Form (BCNF) : Menghilangkan anomali-anomali hasil dari ketergantungan fungsional
 5. Bentuk Normal Keempat (4NF) : Menghilangkan ketergantungan multivalue
-6. Bentuk Normal Kelima : Menghilangkan anomali-anomali yang tersisa
+6. Bentuk Normal Kelima : Menghilangkan anomali-anomali yang tersisa.
 
+#### Tahapan Normalisasi
 1. Bentuk Normal Tahap Pertama (1NF)
 
 Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah database, berikut adalah fungsi dari bentuk normal pertama ini.
@@ -32,6 +32,8 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 
 Gmabar 1
 
+![1_NF.png](https://s1.postimg.org/696vgnwwr3/1_NF.png)
+
 2. Bentuk Normal Tahap Kedua (2NF)
 
 * Bentuk Normal 2NF terpenuhi dalam sebuah tabel jika telah memenuhi bentuk 1NF, dan semua atribut selain primary key, secara utuh memiliki Functional dependency pada primary key.
@@ -40,12 +42,22 @@ Gmabar 1
 
 Gambar 2
 
+![2.NF.png](https://s1.postimg.org/8xylxjigz3/2.NF.png)
+
+![2_NF.png](https://s1.postimg.org/4la9xnjcm7/2_NF.png)
+
+![2.NF1.png](https://s1.postimg.org/8fvsuslqcv/2.NF1.png)
+
 3. Bentuk Normal Tahap Ketiga (3NF)
 
 * Bentuk normal 3NF terpenuhi jika telah memenuhi bentuk 2NF, dan jika tidak ada atribut non primary key yang memiliki ketergantungan terhadap atribut non primary key yang lainnya,
 * Untuk setiap Functional Dependency dengan notasi X-->A, maka : X harus menjadi superkey pada tabel tersebut. Atau A merupakan bagian dari primary key pada tabel tersebut.
 
 Gambar 3
+
+![3.NF.png](https://s1.postimg.org/6vvknnh6f3/3.NF.png)
+
+![3_NF.png](https://s1.postimg.org/530bm8xdfz/3_NF.png)
 
 4. Boyce-Code Normal Form (BCNF)
 
