@@ -63,6 +63,8 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 * Bentuk normal 4NF terpenuhi dalam sebuah tabel jika telah memenuhi bentuk BCNF, dan tabel tersebut tidak boleh memiliki lebih dari sebuah multivalued attribute.
 * Untuk setiap  multivalued attribute (MVD) juga harus merupakan Functional Dependency
 
+[![image.jpg](http://slideplayer.info/slide/3770094/12/images/4/Cara+medekomposisi+relasi+yang+telah+dalam+bentuk+normal+ketiga+kedalam+bentuk+normal+BCNF+adalah:+Carilah+semua+determinan+Bila+terdapat+penentu+yang+bukan+kunci+kandidat,+maka+Pisahkan+relasi+tersebut,+dan+Buat+penentu+tersebut+sebagai+kunci+primer.jpg)]
+
 6. Bentuk Normal Tahap Kelima (5NF)
 
 * Bentuk normal 5NF terpenuhi jika memiliki sebuah loseloss decomposition menjadi tabel-tabel yang lebih kecil.
