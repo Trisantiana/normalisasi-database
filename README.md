@@ -11,7 +11,9 @@ Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemun
     * DELETE Anomali: Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
     * UPDATE Anomali: Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
 
-## TAHAPAN NORMALISASI : Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF). Biasanya hanya sampai pada tingkat 3NF atau BCNF karena sudah cukup memadai untuk menghasilkan tabel-tabel yang berkualitas baik. Urutannya : 1NF, 2NF, 3NF, BCNF, 4 NF, 5NF
+## TAHAPAN NORMALISASI : 
+
+Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF). Biasanya hanya sampai pada tingkat 3NF atau BCNF karena sudah cukup memadai untuk menghasilkan tabel-tabel yang berkualitas baik. Urutannya : 1NF, 2NF, 3NF, BCNF, 4 NF, 5NF
 
 
 1. Bentuk Normal Pertama (1NF) : Menghilangkan Perulangan Grup
