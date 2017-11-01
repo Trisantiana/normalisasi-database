@@ -1,26 +1,28 @@
 # Normalisasi Database
-Normalisasi database merupakan suatu pendekatan sistematis untuk meminimalkan redundansi data pada suatu database agar database tersebut dapat bekerja dengan optimal.
+Normalisasi database merupakan suatu pendekatan sistematis untuk meminimalkan redundansi data pada suatu database agar database tersebut dapat bekerja dengan optimal. Teori ini pertama kali ditemukan oleh Dr. Codd kira-kira sekitar tahun 1970-an.
 
 #### Tujuan Normalisasi Database
 
-Tujuan normalisasi database adalah untuk menghilangkan dan mengurangi redudansi data dan tujuan yang kedua adalah memastikan dependensi data (Data berada pada tabel yang tepat).
+- Menghilangkan dan mengurangi redudansi data.
+- Memastikan dependensi data (Data berada pada tabel yang tepat).
+- Mempermudah pemodifikasian data
 
 Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemungkinan yang akan merugikan sistem secara keseluruhan.
 
-    * INSERT Anomali : Situasi dimana tidak memungkinkan memasukkan beberapa jenis data secara langsung di database.
-    * DELETE Anomali: Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
-    * UPDATE Anomali: Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
+- *INSERT* Anomali : Situasi dimana tidak memungkinkan memasukkan beberapa jenis data secara langsung di database.
+- *DELETE* Anomali : Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
+- *UPDATE* Anomali : Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
 
 ## TAHAPAN NORMALISASI : 
 
 Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF).
 
 1. Bentuk Normal Pertama (1NF) : Menghilangkan Perulangan Grup
-2. Bentuk Normal Kedua (2NF) : Menghilangkan Ketergantungan Parsial
-3. Bentuk Normal Ketiga (3NF) : Menghilangkan Ketergantungan Transitif
+2. Bentuk Normal Kedua (2NF)   : Menghilangkan Ketergantungan Parsial
+3. Bentuk Normal Ketiga (3NF)  : Menghilangkan Ketergantungan Transitif
 4. Bentuk Normal Boyce-Code Form (BCNF) : Menghilangkan anomali-anomali hasil dari ketergantungan fungsional
 5. Bentuk Normal Keempat (4NF) : Menghilangkan ketergantungan multivalue
-6. Bentuk Normal Kelima : Menghilangkan anomali-anomali yang tersisa.
+6. Bentuk Normal Kelima (5NF)  : Menghilangkan anomali-anomali yang tersisa.
 
 [![Tahapan-_Normalisasi.jpg](https://s1.postimg.org/5nyhs6wxu7/Tahapan-_Normalisasi.jpg)](https://postimg.org/image/8bny2jpz63/)
 
@@ -55,6 +57,8 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 * Bentuk BCNF terpenuhi dalam sebuah tabel, jika untuk setiap Functional Dependency terhadap setiap atribut atau gabungan atribut dalam bentuk : X --> Y maka X adalah Super Key.
 * Tabel tersebut harus di dekomposisi berdasarkan Functional Dependency yang ada, sehingga X menjadi super key dari tabel-tabel hasil dekomposisi.
 * Setiap tabel dalam BCNF merupakan 3NF. Akan tetapi setiap 3NF belum tentu termasuk BCNF. Perbedaannya, untuk Functional Dependency X--> A, BCNF tidak membolehkan A sebagai bagian dari primary key.
+
+![image.jpg](http://slideplayer.info/slide/3770094/12/images/4/Cara+medekomposisi+relasi+yang+telah+dalam+bentuk+normal+ketiga+kedalam+bentuk+normal+BCNF+adalah:+Carilah+semua+determinan+Bila+terdapat+penentu+yang+bukan+kunci+kandidat,+maka+Pisahkan+relasi+tersebut,+dan+Buat+penentu+tersebut+sebagai+kunci+primer.jpg)
 
 5. Bentuk Normal Tahap Keempat (4NF) atau MVD dan PJNF
 
