@@ -8,8 +8,8 @@ Tujuan normalisasi database adalah untuk menghilangkan dan mengurangi redudansi 
 Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemungkinan yang akan merugikan sistem secara keseluruhan.
 
     * INSERT Anomali : Situasi dimana tidak memungkinkan memasukkan beberapa jenis data secara langsung di database.
-    * DELETE Anomali: Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
-    * UPDATE Anomali: Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
+    * DELETE Anomali : Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
+    * UPDATE Anomali : Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
 
 ## TAHAPAN NORMALISASI : 
 
@@ -30,9 +30,11 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 * Bentuk normal 1NF terpenuhi jika sebuah tabel tidak memiliki atribut bernilai banyak (multivalued attribute), atribut composite atau kombinasinya dalam domain data yang sama.
 * Setiap atribut dalam tabel tersebut harus bernilai atomic (tidak dapat dibagi-bagi lagi).
 
-Gmabar 1
+Gambar 1
 
-![1_NF.png](https://s1.postimg.org/696vgnwwr3/1_NF.png)
+![nf1.jpg](https://s1.postimg.org/7x4qxi0ny7/nf1.jpg)
+
+gambar tersebut adalah contoh bentuk normal 1NF. yang menandainya adalah setiap kolom atau baris harus terisi dan setiap kolom harus mengandung satu nilai.
 
 2. Bentuk Normal Tahap Kedua (2NF)
 
