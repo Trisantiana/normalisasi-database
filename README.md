@@ -58,6 +58,7 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 * Bentuk normal 1NF terpenuhi jika sebuah tabel tidak memiliki atribut bernilai banyak (multivalued attribute), atribut composite atau kombinasinya dalam domain data yang sama.
 * Setiap atribut dalam tabel tersebut harus bernilai atomic (tidak dapat dibagi-bagi lagi).
 * Isi table tidak memungkinkan terjadinya null value
+* Menjaga setiap entry data dari relasi (perpotongan baris-kolom) memiliki maksimal satu nilai tunggal.
 
 [![image.jpg](https://s1.postimg.org/4srj52x9wv/image.jpg)](https://postimg.org/image/9btk822quj/)
 
@@ -66,6 +67,12 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 * Bentuk Normal 2NF terpenuhi dalam sebuah tabel jika telah memenuhi bentuk 1NF, dan semua atribut selain primary key, secara utuh memiliki Functional dependency pada primary key.
 * Sebuah tabel tidak memenuhi 2NF, jika ada atribut yang ketergantungannya (Functional Dependency) hanya bersifat parsial saja (hanya tergantung pada sebagian dari primary key).
 * Jika terdapat atribut yang tidak memiliki ketergantungan terhadap primary key, maka atribut tersebut harus dipindah atau dihilangkan.
+
+**Tujuan**
+
+- Menghapus beberapa subset data yang ada pada tabel dan menempatkan mereka pada tabel terpisah.
+- Menciptakan hubungan antara tabel baru dan tabel lama dengan menciptakan foreign key.
+- Tidak ada atribut dalam tabel yang secara fungsional bergantung pada candidate key tabel tersebut.
 
 [![image.jpg](https://s1.postimg.org/7nwyp16yun/image.jpg)](https://postimg.org/image/5hxk39fb3f/)
 
@@ -84,6 +91,8 @@ pada gambar dibawah ini adalah contoh 3Nf. pada gambar normal ke 2 disitu terdap
 [![image.jpg](https://s1.postimg.org/1ybmdgniu7/image.jpg)](https://postimg.org/image/4pkolj9mvv/)
 
 4. Boyce-Code Normal Form (BCNF)
+
+BCNF ditemukan oleh: R.F. Boyce dan E.F. Codd. BCNF merupakan sebuah teknik normalisasi database yang sering disebut 3.5NF, BCNF memiliki hubungan yang sangat erat dengan bentuk 3NF. Pada dasarnya adalah untuk menghandle anomali dan overlooping yang tidak dapat di handle dalam bentuk 3NF. Normalisasi database bentuk ini tergantung dari kasus yang disediakan. Tidak semua tabel wajib di normalisasi dalam bentuk BCNF, tetapi demi mendapatkan rancangan yang baik BCNF perlu dilakukan.
 
 * Bentuk BCNF terpenuhi dalam sebuah tabel, jika untuk setiap Functional Dependency terhadap setiap atribut atau gabungan atribut dalam bentuk : X --> Y maka X adalah Super Key.
 * Tabel tersebut harus di dekomposisi berdasarkan Functional Dependency yang ada, sehingga X menjadi super key dari tabel-tabel hasil dekomposisi.
