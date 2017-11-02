@@ -30,12 +30,17 @@ Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF).
 
 #### Tahapan Normalisasi
 
-* Bentuk Unnormalized
-- Mempunyai penggandaan file yang sejenis, jika diisikan data maka kemungkinan akan terjadi null value atau multivalue
-- Isi tabel memungkinkan terjadinya null value.
-Cara merubah table dari tidak normal kebentuk normal ke1 :
-a). Penulisan berulang sesuai dengan atribut key-nya yg masih dalam 1 relasi (tapi tidak dianjurkan, karena menybabkan redudancy dengan penulisan berualng-ulang).
-b). Mencari nilai max, misal disebuah alamat ada 3 value, maka ditulis ALAMAT1, ALAMAT2, ALAMAT3, ALAMAT-N (tidak dianjurkan karena bisa menyebabkan terjadinya null value).
+__Functional Dependency__
+Sebelum melakukan normalisasi harus menentukan dulu functional dependency atau ketergantungan fungsional.
+Disimbolkan : `A -> B` (maka `B` bergantung pada `A` dan `A` menentukan `B`)
+Dan jika diberikan dalam 2 rows dalam table T maka pasti A kesatu sama dengan A kedua begitu juga dengan B 
+
+__Bentuk Unnormalized__
+* Mempunyai penggandaan file yang sejenis, jika diisikan data maka kemungkinan akan terjadi null value atau multivalue
+* Isi tabel memungkinkan terjadinya null value.
+Cara merubah table dari tidak normal kebentuk normal ke1 : <br>
+a). Penulisan berulang sesuai dengan atribut key-nya yg masih dalam 1 relasi (tapi tidak dianjurkan, karena menybabkan redudancy dengan penulisan berualng-ulang).<br>
+b). Mencari nilai max, misal disebuah alamat ada 3 value, maka ditulis ALAMAT1, ALAMAT2, ALAMAT3, ALAMAT-N (tidak dianjurkan karena bisa menyebabkan terjadinya null value).<br>
 c). Hapus sebuah atribut yang memiliki lebih dari 1 value, lalu pisahakkan dengan membuat table baru (yang paling dianjurkan).
 
 
