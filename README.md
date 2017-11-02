@@ -29,12 +29,23 @@ Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF).
 
 
 #### Tahapan Normalisasi
+
+* Bentuk Unnormalized
+- Mempunyai penggandaan file yang sejenis, jika diisikan data maka kemungkinan akan terjadi null value atau multivalue
+- Isi tabel memungkinkan terjadinya null value.
+Cara merubah table dari tidak normal kebentuk normal ke1 :
+a). Penulisan berulang sesuai dengan atribut key-nya yg masih dalam 1 relasi (tapi tidak dianjurkan, karena menybabkan redudancy dengan penulisan berualng-ulang).
+b). Mencari nilai max, misal disebuah alamat ada 3 value, maka ditulis ALAMAT1, ALAMAT2, ALAMAT3, ALAMAT-N (tidak dianjurkan karena bisa menyebabkan terjadinya null value).
+c). Hapus sebuah atribut yang memiliki lebih dari 1 value, lalu pisahakkan dengan membuat table baru (yang paling dianjurkan).
+
+
 1. Bentuk Normal Tahap Pertama (1NF)
 
 Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah database, berikut adalah fungsi dari bentuk normal pertama ini.
 
 * Bentuk normal 1NF terpenuhi jika sebuah tabel tidak memiliki atribut bernilai banyak (multivalued attribute), atribut composite atau kombinasinya dalam domain data yang sama.
 * Setiap atribut dalam tabel tersebut harus bernilai atomic (tidak dapat dibagi-bagi lagi).
+* Isi table tidak memungkinkan terjadinya null value
 
 [![image.jpg](https://s1.postimg.org/4srj52x9wv/image.jpg)](https://postimg.org/image/9btk822quj/)
 
@@ -50,7 +61,9 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 
 * Bentuk normal 3NF terpenuhi jika telah memenuhi bentuk 2NF, dan jika tidak ada atribut non primary key yang memiliki ketergantungan terhadap atribut non primary key yang lainnya,
 * Untuk setiap Functional Dependency dengan notasi X-->A, maka : X harus menjadi superkey pada tabel tersebut. Atau A bergantung pada X.
-* Harus tidak ada ketergantungan secara transitif(tidak langsung). Jadi kergantungan field-field yang bukan primary key harus mutlak. 
+* Harus tidak ada ketergantungan secara transitif(tidak langsung). Jadi kergantungan field-field yang bukan primary key harus mutlak.
+* Tidak dijumpai ketergantungan Transitive dependency (ketergantungan fungsional antara 2 lebih atribut bukan Primary Key)
+
 
 ##### Penjelasan Gambar 
 
