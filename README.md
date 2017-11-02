@@ -2,6 +2,13 @@
 Normalisasi database merupakan suatu pendekatan sistematis untuk meminimalkan redundansi data pada suatu database agar database tersebut dapat bekerja dengan optimal. Teori ini pertama kali ditemukan oleh Dr. Codd kira-kira sekitar tahun 1970-an. 
 Dalam melakukan normalisasi harus dilakukan funcional dependency(FD). FD dapat disimbolkan dengan X->Y yang artinya Y meiliki ketergantungan dengan X atau X secsara functional memiliki ketergantungan dengan Y.
 
+**Normalisasi harus dilakukan apabila :**
+- Data yang sama tersimpan di beberapa tempat.
+- Ketidakmampuan untuk menghasilkan informasi yang dibutuhkan.
+- Terjadi kehilangan data yang tidak disengaja.
+- Terjadi adanya redudansi atau duplikasi data sehingga memboroskan ruang dan menyulitkan proses updating data.
+- Adanya NULL Value.
+
 #### Tujuan Normalisasi Database
 
 - Menghilangkan dan mengurangi redudansi data.
