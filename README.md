@@ -49,6 +49,7 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 
 * Bentuk normal 3NF terpenuhi jika telah memenuhi bentuk 2NF, dan jika tidak ada atribut non primary key yang memiliki ketergantungan terhadap atribut non primary key yang lainnya,
 * Untuk setiap Functional Dependency dengan notasi X-->A, maka : X harus menjadi superkey pada tabel tersebut. Atau A bergantung pada X.
+* Harus tidak ada ketergantungan secara transitif(tidak langsung). Jadi kergantungan field-field yang bukan primary key harus mutlak. 
 
 [![image.jpg](https://s1.postimg.org/1ybmdgniu7/image.jpg)](https://postimg.org/image/4pkolj9mvv/)
 
