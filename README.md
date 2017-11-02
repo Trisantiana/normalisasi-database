@@ -51,6 +51,10 @@ Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah d
 * Untuk setiap Functional Dependency dengan notasi X-->A, maka : X harus menjadi superkey pada tabel tersebut. Atau A bergantung pada X.
 * Harus tidak ada ketergantungan secara transitif(tidak langsung). Jadi kergantungan field-field yang bukan primary key harus mutlak. 
 
+##### Penjelasan Gambar 
+
+pada gambar dibawah ini adalah contoh 3Nf. pada gambar normal ke 2 disitu terdapat field __No.Order, tgl.order, item, dan deskripsi__. disitu belum terjadi bentuk normal 3 karena masih ada field yang belum mutlak atau masih samar-samar. pada gambar normal ke 2 field __no.order__ adalah sebagi PK dan yang bergantung pada PK adalah field __tgl.order__ dan field __item__ sedangkan field __deskripsi__ itu tergantung pada field __item__ tetapi field __item__ bergantung pada field __no.order__ sehingga field __deskripsi__ juga menjadi bergantung pada field __no.order__ tapi belum mutlak. sehingga pada gambar normal ke 3 di uraikan lagi bahwa field __deskripsi__ bergantung pada field __item__ dan field __deskripsi__ tidak perlu ditulis pada normal ke 3. jadi terbentuk normal 3 (3NF) seperti pada gambar sebelah normal ke 3 isi fieldnya cukup __no.order, tgl.order, dan item__.
+
 [![image.jpg](https://s1.postimg.org/1ybmdgniu7/image.jpg)](https://postimg.org/image/4pkolj9mvv/)
 
 4. Boyce-Code Normal Form (BCNF)
